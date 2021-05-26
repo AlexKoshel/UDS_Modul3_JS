@@ -1,6 +1,6 @@
-var Sdk = window.Sdk || {};
+var UDSEdu = window.UDSEdu || {};
 (
-    function () {      
+    function () {     
 
         this.reservedPickupOnChange = function (executionContext) {
             var formContext = executionContext.getFormContext();           
@@ -30,4 +30,4 @@ var Sdk = window.Sdk || {};
             }
         }
     }
-).call(Sdk);
+).call(UDSEdu);
