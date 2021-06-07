@@ -15,7 +15,8 @@ function HideStatusReasonValue(formContext) {
     var activeStage = formContext.data.process.getActiveStage();
     var stageName = activeStage.getName();
 
-    if ((formContext.getAttribute("statuscode").getSelectedOption() != null) && (stageName != null)) {
+    if ((formContext.getAttribute("statuscode").getSelectedOption() != null)
+        && (stageName != null)) {
 
         if (stageName == "Created") {
             formContext.getControl("statuscode").addOption({ text: "Confirmed", value: 970300000 });
